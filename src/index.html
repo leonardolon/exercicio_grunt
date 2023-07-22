@@ -13,13 +13,18 @@
 <body>
     <main>
         <h1>Sorteador</h1>
-        <form>
-            <div>
+        <form id="form-sorteador">
+            <div> 
                 <Label for="numero-maximo">Numero Maximo</Label>
-                <Input type="number" id="numero-maximo"></Input>
+                <Input type="number" id="numero-maximo" required min="2" value="2" step="1"></Input>
             </div>
             <button type="submit">Sortear numero</button>
         </form>
-    </main>    
+        <div class="resultado">
+            O numero sorteado foi: <span id="resultado-valor"></span>
+        </div>
+    </main>
+    
+    <script src="@@ENDERECO_DO_JS"></script>    
 </body>
 </html>
